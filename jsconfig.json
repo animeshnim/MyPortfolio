@@ -1,7 +1,9 @@
 {
-  "compilerOptions": {
-    "paths": {
-      "@/*": ["./src/*"]
+    "compilerOptions": {
+        "paths": {
+            "@/*": ["./src/*"],
+            "db/*": ["./database/*"],
+            "static/*": ["./public/static/*"],
+        }
     }
-  }
 }

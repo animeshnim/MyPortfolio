@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .section {
+        @apply max-w-[72rem] mx-auto w-full mt-10 sm:mt-14 md:mt-16 xl:mt-20
+    }
+
+    .card {
+        @apply p-4 sm:p-6 lg:p-8 rounded-2xl
+    }
+
+    .cards-section {
+        @apply grid gap-4 sm:gap-6 lg:gap-8 p-4 sm:p-6
+    }
+}
+
+
+.bg-card-1 {
+    background-color: rgb(154, 223, 213);
+
+}
+
+.bg-card-2 {
+    background-color: rgb(250, 186, 140);
+}
+
+.bg-card-3 {
+    background-color: rgb(180, 225, 253);
+}
+
+.bg-card-4 {
+    background-color: rgb(200, 170, 246); 
+}
+
+.bg-card-extra {
+    background-color: rgb(246, 243, 239, 50%);
+}
+
+.bg-body {
+    background: linear-gradient(to right, rgb(199, 223, 176), rgb(199, 223, 207), rgb(231, 223, 207), rgb(231, 223, 176));
+    background-size: 400% 400%;
+    animation: gradient 10s ease-in infinite;
+}
+
+.bg-body-alt {
+    background-color: rgb(212, 195, 246);
+}
+
+
+/* Animations */
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
